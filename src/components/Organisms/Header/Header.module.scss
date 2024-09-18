@@ -1,0 +1,8 @@
+@import '@styles/utilities/utilities';
+.header {
+  @include flex-container(row, space-between, center);
+  padding: $spacing-xxs 0;
+  height: 64px;
+  width: 100%;
+  background: $color-background-white;
+}

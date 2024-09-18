@@ -1,0 +1,13 @@
+export { default as AddUserLightIcon } from './AddUserLightIcon';
+export { default as CheckIcon } from './CheckIcon';
+export { default as GoBackIcon } from './GoBackIcon';
+export { default as HomeLightIcon } from './HomeLightIcon';
+export { default as HospitalLightIcon } from './HospitalLightIcon';
+export { default as HouseIcon } from './HouseIcon';
+export { default as LaptopSolidIcon } from './LaptopSolidIcon';
+export { default as LineIcon } from './LineIcon';
+export { default as LogoIcon } from './LogoIcon';
+export { default as LogoMobile } from './LogoMobile';
+export { default as PersonIcon } from './PersonIcon';
+export { default as PhoneIcon } from './PhoneIcon';
+export { default as ProtectionLightIcon } from './ProtectionLightIcon';

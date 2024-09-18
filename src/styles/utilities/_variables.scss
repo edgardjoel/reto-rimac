@@ -1,0 +1,56 @@
+// Colores sólidos
+$color-background-dark: #03050f;
+$color-background-purple: #4f4fff; // Cambiado para que coincida con un color mencionado
+$color-background-teal: #7df0ba; // Cambiado para que coincida con un color mencionado
+$color-background-grey: #c5cbe0; // Cambiado para que coincida con un color mencionado
+$color-background-white: #ffffff;
+$color-background-light: #d7dbf5; // Cambiado para que coincida con un color mencionado
+$color-background-red: #f7052d;
+$color-background-green: #389e0d; // Añadido un nombre para el color verde
+
+$separator-color: #2b304e;
+
+// Gradientes
+$gradient-primary: linear-gradient(156.04deg, #34263b 27.21%, #13172c 65.81%);
+$gradient-secondary: linear-gradient(135deg, #f7052d 34.07%, #ca5afa 75.27%);
+$gradient-teal-to-green: linear-gradient(86.01deg, #00f4e2 0%, #00ff7f 100%);
+
+// Dimensiones para puntos de quiebre (breakpoints)
+$breakpoint-mobile: 384px;
+$breakpoint-mobile-max: 767px;
+$breakpoint-tablet: 1024px;
+$breakpoint-desktop: 1025px;
+$breakpoint-large-desktop: 1360px;
+
+// Variables de tamaño de botón
+$button-padding-large: 20px 40px;
+$button-radius-large: 40px;
+$button-width-large: 195px;
+$button-height-large: 64px;
+
+$button-padding-medium: 16px 30px;
+$button-radius-medium: 35px;
+$button-width-medium: 150px;
+$button-height-medium: 56px;
+
+$button-padding-small: 14px 24px;
+$button-radius-small: 30px;
+$button-width-small: 120px;
+$button-height-small: 48px;
+
+$button-padding-full-width: 16px 0;
+$button-radius-full-width: 30px;
+$button-width-full-width: 100%;
+$button-height-full-width: 56px;
+
+// Variables de color
+$button-background-large: #03050f;
+$button-color-large: #ffffff;
+
+$button-background-medium: #03050f;
+$button-color-medium: #ffffff;
+
+$button-background-small: #03050f;
+$button-color-small: #ffffff;
+
+$color-background-grey: #d3d3d3;

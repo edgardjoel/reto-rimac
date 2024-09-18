@@ -1,0 +1,122 @@
+@use 'bootstrap/scss/bootstrap' as *;
+
+@import 'base/reset';
+@import 'utilities/fonts.scss';
+@import 'utilities/mixins.scss';
+@import 'utilities/typography.scss';
+@import 'utilities/variables.scss';
+
+body {
+  font-family: 'BRSonoma', 'Lato', sans-serif;
+  font-size: $font-size-base;
+  line-height: 1.5;
+  color: $color-background-dark;
+  margin: 0;
+  padding: 0;
+  background: #f8f9ff;
+}
+
+* {
+  font-family: 'BRSonoma', 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'BRSonoma', 'Lato', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: $font-size-h1;
+  font-weight: 900; // Black weight para h1
+}
+
+h2 {
+  font-size: $font-size-h2;
+  font-weight: 700; // Bold weight para h2
+}
+
+h3 {
+  font-size: $font-size-h3;
+  font-weight: 600; // SemiBold para h3
+}
+
+h4 {
+  font-size: $font-size-h4;
+  font-weight: 500; // Medium para h4
+}
+
+h5 {
+  font-size: $font-size-h5;
+  font-weight: 400; // Regular para h5
+}
+
+h6 {
+  font-size: $font-size-h6;
+  font-weight: 300; // Light para h6
+}
+
+p {
+  font-size: $font-size-base;
+  font-weight: 400; // Regular por defecto
+  line-height: 1.7;
+  margin: 0;
+}
+
+//Estos son de Bootstrap modificacion de estilos
+
+.btn-outline-secondary,
+.form-control {
+  min-height: 56px !important;
+  height: 56px !important;
+  border: 1px solid #5e6488;
+}
+
+.dropdown-toggle.btn.btn-outline-secondary {
+  border-right: 0;
+}
+
+.form-control:focus {
+  border-color: #5e6488 !important;
+
+  box-shadow: none;
+}
+
+.input-group:not(.has-validation)
+  > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
+.input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n + 3),
+.input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control,
+.input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select {
+  width: 140px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn-check:checked + .btn,
+:not(.btn-check) + .btn:active,
+.btn:first-child:active,
+.btn.active,
+.btn.show {
+  color: #181a22;
+  background-color: #ffffff;
+  border-color: #5e6488;
+}
+
+.btn:hover {
+  color: #181a22;
+  background-color: #ffffff;
+  border-color: #5e6488;
+}
+
+.input-group:not(.has-validation)
+  > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
+.input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n + 3),
+.input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control,
+.input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select {
+  color: #181a22;
+}

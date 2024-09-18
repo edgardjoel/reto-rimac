@@ -1,0 +1,191 @@
+// _fonts.scss
+
+@font-face {
+  font-family: 'BRSonoma';
+  src: url('../../assets/fonts/brsonoma/BRSonoma-Regular-BF654c45266c042.otf') format('opentype');
+  font-weight: normal; /* Normal weight is typically 400 */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BRSonoma';
+  src: url('../../assets/fonts/brsonoma/BRSonoma-RegularItalic-BF654c452681c11.otf')
+    format('opentype');
+  font-weight: normal; /* Normal weight is typically 400 */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BRSonoma';
+  src: url('../../assets/fonts/brsonoma/BRSonoma-Bold-BF654c4526823f5.otf') format('opentype');
+  font-weight: bold; /* Bold weight is typically 700 */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BRSonoma';
+  src: url('../../assets/fonts/brsonoma/BRSonoma-BoldItalic-BF654c4525c9c27.otf') format('opentype');
+  font-weight: bold; /* Bold weight is typically 700 */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BRSonoma';
+  src: url('../../assets/fonts/brsonoma/BRSonoma-Medium-BF654c45266edd1.otf') format('opentype');
+  font-weight: 500; /* Medium weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BRSonoma';
+  src: url('../../assets/fonts/brsonoma/BRSonoma-MediumItalic-BF654c45267d45f.otf')
+    format('opentype');
+  font-weight: 500; /* Medium weight */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BRSonoma';
+  src: url('../../assets/fonts/brsonoma/BRSonoma-SemiBold-BF654c45268c340.otf') format('opentype');
+  font-weight: 600; /* SemiBold weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BRSonoma';
+  src: url('../../assets/fonts/brsonoma/BRSonoma-SemiBoldItalic-BF654c452696350.otf')
+    format('opentype');
+  font-weight: 600; /* SemiBold weight */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BRSonoma';
+  src: url('../../assets/fonts/brsonoma/BRSonoma-Thin-BF654c45255ffe0.otf') format('opentype');
+  font-weight: 100; /* Thin weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BRSonoma';
+  src: url('../../assets/fonts/brsonoma/BRSonoma-ThinItalic-BF654c45268d3f9.otf') format('opentype');
+  font-weight: 100; /* Thin weight */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BRSonoma';
+  src: url('../../assets/fonts/brsonoma/BRSonoma-Black-BF654c4525506bf.otf') format('opentype');
+  font-weight: 900; /* Black weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BRSonoma';
+  src: url('../../assets/fonts/brsonoma/BRSonoma-BlackItalic-BF654c45268988e.otf')
+    format('opentype');
+  font-weight: 900; /* Black weight */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BRSonoma';
+  src: url('../../assets/fonts/brsonoma/BRSonoma-ExtraLight-BF654c45265af8d.otf') format('opentype');
+  font-weight: 200; /* ExtraLight weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BRSonoma';
+  src: url('../../assets/fonts/brsonoma/BRSonoma-ExtraLightItalic-BF654c4525a5046.otf')
+    format('opentype');
+  font-weight: 200; /* ExtraLight weight */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BRSonoma';
+  src: url('../../assets/fonts/brsonoma/BRSonoma-Light-BF654c452608e0f.otf') format('opentype');
+  font-weight: 300; /* Light weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BRSonoma';
+  src: url('../../assets/fonts/brsonoma/BRSonoma-LightItalic-BF654c45266aa83.otf')
+    format('opentype');
+  font-weight: 300; /* Light weight */
+  font-style: italic;
+}
+
+/* Font Lato*/
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../../assets/fonts/lato/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 100;
+  font-style: normal;
+  src: url('../../assets/fonts/lato/Lato-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 100;
+  font-style: italic;
+  src: url('../../assets/fonts/lato/Lato-ThinItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../../assets/fonts/lato/Lato-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 300;
+  font-style: italic;
+  src: url('../../assets/fonts/lato/Lato-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: italic;
+  src: url('../../assets/fonts/lato/Lato-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../../assets/fonts/lato/Lato-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-style: italic;
+  src: url('../../assets/fonts/lato/Lato-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 900;
+  font-style: normal;
+  src: url('../../assets/fonts/lato/Lato-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 900;
+  font-style: italic;
+  src: url('../../assets/fonts/lato/Lato-BlackItalic.ttf') format('truetype');
+}

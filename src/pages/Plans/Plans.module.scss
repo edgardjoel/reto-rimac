@@ -1,0 +1,44 @@
+@import '@styles/utilities/utilities';
+.plans {
+  &__quote-options-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px; // Espacio entre columnas
+    justify-content: center; // Centrar las columnas
+    padding: 20px; // Añade un poco de espacio alrededor
+
+    @include respond-to('mobile') {
+      padding: 20px 0;
+    }
+
+    &__quote-option {
+      @include respond-to('mobile') {
+        width: 100%;
+      }
+    }
+  }
+
+  .quote-option {
+    flex: 0 1 calc(50% - 32px);
+    box-sizing: border-box;
+  }
+  &__plans-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: flex-start;
+    &__slider {
+      display: none;
+      @include respond-to('mobile') {
+        display: block;
+      }
+    }
+    &__plan-card {
+      width: Fill 288px;
+      @include respond-to('mobile') {
+        display: none;
+      }
+    }
+  }
+}

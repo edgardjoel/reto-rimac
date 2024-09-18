@@ -1,0 +1,18 @@
+@import '@styles/utilities/utilities';
+
+.text-with-background {
+  border-radius: 4px;
+  padding: $spacing-xs $spacing-sm;
+  width: 172px;
+  height: 24px;
+  font-size: $font-size-sm;
+  line-height: $spacing-md;
+  background: $gradient-teal-to-green;
+  font-weight: bold;
+  @include flex-container(row, center, center);
+
+  @include respond-to('mobile') {
+    font-size: $font-size-xs;
+    padding: $spacing-xxs $spacing-sm;
+  }
+}

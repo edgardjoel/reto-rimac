@@ -1,0 +1,11 @@
+@import '@styles/utilities/utilities';
+.circle-with-label-container {
+  @include flex-container(row, center, center);
+  flex-wrap: wrap;
+  height: 64px;
+  padding: 16px 0px 16px 0px;
+}
+
+.circle-with-label-container__item {
+  // Ajusta el diseño de cada elemento si es necesario
+}

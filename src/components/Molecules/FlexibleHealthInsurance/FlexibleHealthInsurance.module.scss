@@ -1,0 +1,44 @@
+@import '@styles/utilities/utilities';
+
+.flexible-insurance {
+  &__content {
+    @include flex-container(row, space-between, center);
+  }
+
+  &__text-container {
+    flex: 1;
+  }
+
+  &__article {
+    margin-top: $spacing-md;
+    @include respond-to('mobile') {
+      margin-top: $spacing-sm;
+    }
+  }
+
+  &__title {
+    font-size: $spacing-xl;
+    line-height: 40px;
+    font-weight: 700;
+  }
+
+  &__description {
+    font-size: $font-size-sm;
+    line-height: 20px;
+    font-weight: 600;
+  }
+
+  &__image-container {
+    flex-shrink: 0;
+    margin-left: $spacing-mdd;
+    display: none;
+    @include respond-to('mobile') {
+      display: block;
+    }
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+  }
+}

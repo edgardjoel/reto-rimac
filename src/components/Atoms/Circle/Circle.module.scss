@@ -1,0 +1,17 @@
+@import '@styles/utilities/utilities';
+
+.circle {
+  @include flex-container(row, center, center);
+  border-radius: 50%;
+  text-align: center;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__number {
+    @include flex-container(row, center, center);
+  }
+}

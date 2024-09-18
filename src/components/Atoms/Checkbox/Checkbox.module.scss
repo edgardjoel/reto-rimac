@@ -1,0 +1,50 @@
+/* Bloque: custom-checkbox */
+.custom-checkbox {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.custom-checkbox__input {
+  position: absolute;
+  opacity: 0;
+}
+
+.custom-checkbox__box {
+  width: 20px;
+  height: 20px;
+
+  border: 2px solid #0a051e;
+  margin-right: 12px;
+  display: flex;
+  position: relative;
+  border-radius: 4px;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.custom-checkbox__input:focus + .custom-checkbox__box {
+  outline: none;
+  box-shadow: none;
+}
+
+.custom-checkbox__input:checked + .custom-checkbox__box {
+  background-color: #0a051e;
+  border-color: #0a051e;
+}
+
+.custom-checkbox__box::after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox__input:checked + .custom-checkbox__box::after {
+  display: block;
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}

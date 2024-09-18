@@ -1,0 +1,104 @@
+@import '@styles/utilities/utilities';
+
+.home {
+  &__content {
+    @include flex-container(row, center, center);
+    z-index: 2;
+  }
+  &__image--pink {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    @include respond-to('mobile') {
+      left: -100px;
+      bottom: -140px;
+    }
+  }
+  &__image--lightblue {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+
+    @include respond-to('mobile') {
+      right: -40px;
+      top: -450px;
+    }
+  }
+  &__image {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__section {
+    height: 640px;
+    position: relative;
+    z-index: 2;
+
+    &--image {
+      width: 600px;
+      padding: $spacing-xl 0 48px 0;
+
+      @include respond-to('mobile') {
+        width: 506px;
+        display: none;
+      }
+    }
+
+    &--form {
+      width: 696px;
+      padding: $spacing-xl 0 80px 128px;
+      position: relative;
+      z-index: 2;
+      @include respond-to('mobile') {
+        padding: 0 0 80px 0;
+
+        @include flex-container(column, center, center);
+      }
+
+      // Estilos para tablet
+      @include respond-to('tablet') {
+        padding: 0 0 80px $spacing-xl;
+        width: 506px;
+      }
+
+      // Estilos para desktop
+      @include respond-to('desktop') {
+        padding: $spacing-xl 0 80px 35px;
+        width: 550px;
+      }
+
+      // Estilos para pantallas grandes
+      @include respond-to('extra-large-desktop') {
+        padding: $spacing-xl 0 80px 128px;
+        width: 1000px;
+      }
+    }
+  }
+
+  &__form {
+    &-content {
+      width: 352px;
+      margin-bottom: $spacing-lg;
+      @include respond-to('mobile') {
+        width: 100%;
+      }
+    }
+
+    &-description {
+      font-size: $font-size-sm;
+      font-weight: 600;
+      margin-top: $spacing-sm;
+      @include respond-to('mobile') {
+        margin-top: 0px;
+      }
+    }
+    &-separator {
+      display: none;
+      @include respond-to('mobile') {
+        display: block;
+      }
+    }
+  }
+}

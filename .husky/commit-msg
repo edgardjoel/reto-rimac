@@ -1,0 +1,33 @@
+#!/bin/sh
+
+# Ejecuta commitlint para validar el mensaje del commit
+npx commitlint --edit "$1"
+
+
+# Asegúrate de que el mensaje del commit no esté vacío
+COMMIT_MSG=$(cat "$1")
+if [ -z "$COMMIT_MSG" ]; then
+  echo "❌ ¡El mensaje del commit no puede estar vacío!"
+  echo "💡 Por favor, proporciona un mensaje de commit significativo siguiendo las pautas."
+  echo ""
+  echo "✅ **Formato del mensaje de commit:**"
+  echo ""
+  echo "    tipo(scope): descripción"
+  echo ""
+  echo "🔍 **Ejemplo:**"
+  echo ""
+  echo "    feat(auth): añadir funcionalidad de inicio de sesión de usuario"
+  echo ""
+  echo "📚 **Tipos válidos:**"
+  echo "    - feat: Una nueva característica"
+  echo "    - fix: Una corrección de un bug"
+  echo "    - docs: Cambios únicamente en la documentación"
+  echo "    - style: Cambios que no afectan el significado del código (espacios en blanco, formato, etc.)"
+  echo "    - refactor: Un cambio en el código que no corrige un bug ni añade una característica"
+  echo "    - perf: Un cambio en el código que mejora el rendimiento"
+  echo "    - test: Adición o corrección de pruebas existentes"
+  echo "    - chore: Otros cambios que no modifican los archivos src o test"
+  echo "    - revert: Revertir un commit anterior"
+  echo ""
+  exit 1
+fi

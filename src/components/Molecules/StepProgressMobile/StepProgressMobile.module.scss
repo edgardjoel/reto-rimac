@@ -1,0 +1,29 @@
+.step-progress-mobile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+  padding: 16px 0 16px 0;
+
+  &__label {
+    font-size: 10px;
+    font-weight: 900;
+    color: #141938;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+
+  &__bar {
+    width: 75%;
+  }
+  &__container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+  }
+  &__button {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,21 @@
+@import '@styles/utilities/utilities';
+.home-layout {
+  @include flex-container(column, normal, normal);
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+
+  &__main {
+    flex-grow: 1;
+  }
+  &__content-footer {
+    background: $color-background-dark;
+    color: $color-background-white;
+    z-index: 1;
+    padding: $spacing-xl 0;
+    &--marginTop {
+      margin-top: 80px;
+    }
+  }
+}

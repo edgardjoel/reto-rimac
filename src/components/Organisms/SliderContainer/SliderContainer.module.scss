@@ -1,0 +1,84 @@
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  &__wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+
+  &__item {
+    flex: 0 0 100%; /* Muestra una tarjeta a la vez */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0; /* Añade más espacio arriba y abajo de la tarjeta */
+  }
+
+  &__button {
+    background: #fff;
+    border: 1px solid #4f4fff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition:
+      background 0.3s ease-in-out,
+      border 0.3s ease-in-out;
+    color: #4f4fff;
+    font-size: 18px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      // background: #3f3f9d; /* Un poco más oscuro para hover */
+    }
+
+    &.disabled {
+      color: #a9afd9;
+      cursor: not-allowed;
+      border: 1px solid #a9afd9;
+    }
+  }
+
+  &__controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre los elementos */
+    margin-top: 10px; /* Añade un margen para separar los controles de las tarjetas */
+    margin-bottom: 10px; /* Añade un margen para separar los controles del borde inferior */
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre los botones y el número */
+  }
+
+  &__pagination-info {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  /* Estilo para pantallas móviles */
+  @media (max-width: 768px) {
+    &__button {
+      font-size: 16px;
+    }
+
+    &__pagination-info {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import '@styles/utilities/utilities';
+
+.circle-with-label {
+  @include flex-container(row, normal, center);
+  gap: 8px;
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &__line-icon {
+    @include flex-container(row, normal, center);
+    margin: 0 16px 0 16px;
+  }
+}

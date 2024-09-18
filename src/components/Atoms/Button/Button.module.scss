@@ -1,0 +1,101 @@
+@import '@styles/utilities/utilities';
+
+.button {
+  border-radius: $button-radius-large;
+  background-color: $button-background-large;
+  color: $button-color-large;
+  width: $button-width-large;
+  height: $button-height-large;
+  padding: $button-padding-large;
+  border: none;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+  transform: translateZ(0); // Para evitar el texto borroso
+
+  // Modificadores para pantallas grandes
+  @include respond-to('mobile') {
+    width: $button-width-large;
+    height: $button-height-large;
+    padding: $button-padding-large;
+    border-radius: $button-radius-large;
+    background-color: $button-background-large;
+    color: $button-color-large;
+  }
+
+  // Modificadores de color
+  &--primary {
+    background-color: #03050f;
+    color: white;
+
+    &:hover {
+      background-color: darken(#03050f, 5%);
+      &:not(:disabled) {
+        transform: scale(1.01);
+      }
+    }
+  }
+
+  &--secondary {
+    background-color: gray;
+    color: white;
+
+    &:hover {
+      background-color: darken(gray, 10%);
+      &:not(:disabled) {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &--danger {
+    background-color: red;
+    color: white;
+
+    &:hover {
+      background-color: darken(red, 10%);
+      &:not(:disabled) {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  // Modificadores para tamaño
+  &--small {
+    padding: $button-padding-small;
+    border-radius: $button-radius-small;
+    width: $button-width-small;
+    height: $button-height-small;
+    font-size: $font-size-sm;
+  }
+
+  &--medium {
+    padding: $button-padding-medium;
+    border-radius: $button-radius-medium;
+    width: $button-width-medium;
+    height: $button-height-medium;
+    font-size: $font-size-base;
+  }
+
+  &--large {
+    width: $button-width-large;
+    padding: $button-padding-large;
+    height: $button-height-large;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &--full-width {
+    width: $button-width-full-width;
+    padding: $button-padding-full-width;
+    height: $button-height-full-width;
+    font-size: $font-size-md;
+  }
+
+  &:disabled {
+    background-color: $color-background-grey;
+    cursor: not-allowed;
+    transform: none; // Elimina el efecto de escala para botones deshabilitados
+  }
+}

@@ -1,0 +1,54 @@
+@import '@styles/utilities/utilities';
+.footer {
+  @include flex-container(row, space-between, center);
+
+  height: 64px;
+  width: 100%;
+  background: $color-background-dark;
+  color: $color-background-white;
+
+  @include respond-to('mobile') {
+    @include flex-container(column, space-between, center);
+    height: auto;
+  }
+
+  // Estilos para tablet
+  @include respond-to('tablet') {
+    @include flex-container(column, space-between, center);
+    height: auto;
+  }
+
+  // Estilos para pantallas grandes
+  @include respond-to('large-desktop') {
+  }
+  &__text {
+    font-size: $font-size-sm;
+  }
+  &__logo {
+    display: block;
+    @include respond-to('mobile') {
+      display: none;
+    }
+    @include respond-to('tablet') {
+      display: none;
+    }
+    &--mobile {
+      display: none;
+      @include respond-to('mobile') {
+        display: block;
+      }
+      @include respond-to('tablet') {
+        display: block;
+      }
+    }
+  }
+  &__separator {
+    display: none;
+    @include respond-to('mobile') {
+      display: block;
+    }
+    @include respond-to('tablet') {
+      display: block;
+    }
+  }
+}

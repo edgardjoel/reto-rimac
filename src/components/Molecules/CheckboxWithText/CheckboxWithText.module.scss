@@ -1,0 +1,11 @@
+@import '@styles/utilities/utilities';
+.custom-checkbox-text {
+  @include flex-container(row, normal, center);
+
+  &__span {
+    font-size: $font-size-xs;
+  }
+  &__label {
+    cursor: pointer;
+  }
+}

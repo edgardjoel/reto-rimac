@@ -1,0 +1,35 @@
+@mixin respond-to($device) {
+  @if $device == 'mobile' {
+    @media (max-width: $breakpoint-mobile) {
+      @content;
+    }
+
+    @media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-mobile-max) {
+      @content;
+    }
+  } @else if $device == 'tablet' {
+    @media (min-width: ($breakpoint-mobile-max + 1px)) and (max-width: $breakpoint-tablet) {
+      @content;
+    }
+  } @else if $device == 'desktop' {
+    @media (min-width: ($breakpoint-tablet + 1px)) and (max-width: $breakpoint-desktop) {
+      @content;
+    }
+  } @else if $device == 'large-desktop' {
+    @media (min-width: ($breakpoint-desktop + 1px)) and (max-width: $breakpoint-large-desktop) {
+      @content;
+    }
+  } @else if $device == 'extra-large-desktop' {
+    @media (min-width: $breakpoint-large-desktop) {
+      @content;
+    }
+  } @else {
+    @warn "No valid device specified. Use 'mobile', 'tablet', 'desktop', 'large-desktop', or 'extra-large-desktop'.";
+  }
+}
+@mixin flex-container($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}

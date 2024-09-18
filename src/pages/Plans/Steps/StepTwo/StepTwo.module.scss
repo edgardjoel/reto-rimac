@@ -1,0 +1,68 @@
+.step-two {
+  padding: 40px 32px 48px 32px;
+  background: #ffffff;
+  border: 1px solid #fff;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0px 1px 32px 0px #aeacf359;
+  margin-top: 48px;
+
+  &__title {
+    /* Estilos para el título en el header */
+    font-size: 10px;
+    font-weight: 900;
+    margin-bottom: 8px;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+
+  &__main {
+    /* Estilos para el contenedor principal */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__section {
+    /* Estilos para las secciones que contienen la información */
+
+    display: flex;
+    flex-direction: column;
+  }
+  &__section2 {
+    display: flex;
+    align-items: center;
+  }
+  &__text-name {
+    margin-left: 12px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  &__info {
+    /* Estilos para los bloques de información como DNI o celular */
+    display: block;
+    font-size: 14px;
+
+    margin-bottom: 4px;
+
+    p {
+      display: inline;
+    }
+  }
+
+  &__text {
+    /* Estilos para el texto dentro de los bloques de información */
+    font-size: 16px;
+  }
+}

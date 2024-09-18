@@ -1,0 +1,13 @@
+@import '@styles/utilities/utilities';
+.contact-section {
+  @include flex-container(row, normal, center);
+  &__message {
+    font-size: $font-size-xs;
+    font-weight: 600;
+    margin-right: $spacing-md;
+    display: block;
+    @include respond-to('mobile') {
+      display: none;
+    }
+  }
+}

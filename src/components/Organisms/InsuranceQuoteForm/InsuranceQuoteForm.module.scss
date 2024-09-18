@@ -1,0 +1,58 @@
+@import '@styles/utilities/utilities';
+
+// Variables para colores y tipografía
+$error-color: #d9534f; // Color para el texto del mensaje de error
+$font-size: 0.875rem; // Tamaño de fuente para los mensajes de error
+$margin-top: 8px;
+.form {
+  width: 352px;
+
+  @include respond-to('mobile') {
+    width: 100%;
+  }
+  @include respond-to('extra-large-desktop') {
+    width: 580px;
+  }
+  &__error {
+    color: $error-color;
+    font-size: $font-size;
+    margin-top: 4px;
+    margin-bottom: $margin-top;
+  }
+
+  &__dropdown-input-group {
+    // Estilos para el DropdownInputGroup
+    margin-bottom: 16px;
+  }
+
+  &__input {
+    // Estilos para el Input
+  }
+
+  &__checkbox-group {
+    margin-bottom: $spacing-lg;
+  }
+
+  &__checkbox {
+    margin-bottom: $spacing-mdd;
+  }
+  &__checkbox--fontSize {
+    font-size: $font-size-xs;
+    @include respond-to('mobile') {
+      font-size: $font-size-sm;
+    }
+  }
+  &__terms {
+    font-size: $font-size-xs;
+    font-weight: 600;
+    text-decoration: underline;
+
+    cursor: pointer;
+  }
+
+  &__button {
+    @include respond-to('mobile') {
+      width: 100%;
+    }
+  }
+}

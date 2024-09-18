@@ -1,0 +1,27 @@
+@import '@styles/utilities/utilities';
+.container {
+  width: 100%;
+  margin: 0 auto;
+  // padding: 0 16px;
+  padding: $spacing-xxs 120px;
+  box-sizing: border-box;
+
+  @include respond-to('mobile') {
+    padding: $spacing-xxs $spacing-lg;
+  }
+
+  // Estilos para tablet
+  @include respond-to('tablet') {
+    padding: $spacing-xxs $spacing-xl;
+  }
+
+  // Estilos para desktop
+  @include respond-to('desktop') {
+    padding: $spacing-xxs 35px;
+  }
+}
+
+.fluid {
+  width: 100%;
+  padding: 0;
+}

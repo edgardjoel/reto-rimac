@@ -1,0 +1,76 @@
+@import '@styles/utilities/utilities';
+.plans-layout {
+  &__go-back {
+    margin-top: 40px;
+    margin-left: 216px;
+    cursor: pointer;
+    width: 20px;
+    @include respond-to('tablet') {
+      margin-left: 100px;
+    }
+  }
+  &__container {
+    padding: 40px 216px 0 216px;
+    @include respond-to('mobile') {
+      padding: 0px, 24px, 0px, 24px;
+    }
+  }
+  &__title-container {
+    margin: auto;
+    max-width: 544px;
+    margin-bottom: 32px;
+    margin-top: 56px;
+    @include respond-to('mobile') {
+      margin: 0;
+      margin-top: 32px;
+    }
+    &--left {
+      margin-top: 32px;
+    }
+  }
+  &__title,
+  &__subtitle {
+    text-align: center;
+    @include respond-to('mobile') {
+      text-align: left;
+    }
+    @include respond-to('tablet') {
+      text-align: center;
+    }
+    &--resumen {
+      text-align: left;
+    }
+  }
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    @include respond-to('mobile') {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+
+    @include respond-to('mobile') {
+      width: 100%;
+    }
+    margin-top: 8px;
+  }
+  &__progress-bar-container {
+    display: block;
+    @include respond-to('mobile') {
+      display: none;
+    }
+  }
+
+  &__step-progress {
+    display: none;
+    @include respond-to('mobile') {
+      display: block;
+    }
+  }
+}

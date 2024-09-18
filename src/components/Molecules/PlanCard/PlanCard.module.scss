@@ -1,0 +1,148 @@
+@import '@styles/utilities/utilities';
+.plan-card {
+  padding: 40px 32px 48px 32px;
+  background: #ffffff;
+  border: 1px solid #fff;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  width: 288px;
+  height: 687px;
+  box-shadow: 0px 1px 32px 0px #aeacf359;
+
+  &__label {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 8px;
+
+    h2 {
+      font-size: 11px;
+      padding: 2px 8px 2px 8px;
+      width: 122px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__info {
+    flex: 1;
+  }
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 24px;
+    line-height: 32px;
+  }
+
+  &__subtitle {
+    font-size: 12px;
+    margin-bottom: 4px;
+    color: #7981b2;
+    font-weight: 900;
+
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+
+  &__cost {
+    font-size: 20px;
+    font-weight: bold;
+    color: #141938;
+    line-height: 28px;
+    font-weight: 900;
+  }
+
+  &__cost-target {
+    font-size: 14px;
+    color: #7981b2;
+    text-decoration: line-through;
+  }
+
+  &__icon--left {
+    order: -1;
+    padding-right: 16px;
+  }
+
+  &__icon--right {
+    padding-left: 16px;
+  }
+
+  &__main {
+  }
+
+  &__features {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  &__feature-item {
+    margin-bottom: 24px;
+    display: flex;
+    // padding-right: 30px;
+
+    &:last-of-type {
+      margin-bottom: 0; // El último elemento no tendrá margen inferior
+    }
+  }
+
+  &__feature-subtitle {
+    font-weight: bold;
+  }
+
+  &__feature-description {
+    color: #666;
+    font-weight: 400;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+    color: #141938;
+
+    strong {
+      font-weight: bold; // Negrita para "Médico general a domicilio"
+    }
+  }
+
+  &__footer {
+    text-align: center;
+  }
+
+  &__select-button {
+    color: #ffffff;
+    background: #ff1c44;
+    border-radius: 32px;
+    margin-top: 40px;
+    padding: 14px 32px 14px 32px;
+    font-size: 18px;
+    height: 48px;
+  }
+
+  &__feature-icon {
+    margin-right: 8px;
+    display: block;
+    @include respond-to('mobile') {
+      display: none;
+    }
+  }
+  &__feature-icon--bineta {
+    display: none;
+    margin-right: 8px;
+    @include respond-to('mobile') {
+      display: block;
+    }
+  }
+}

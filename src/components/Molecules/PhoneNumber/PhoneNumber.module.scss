@@ -1,0 +1,12 @@
+@import '@styles/utilities/utilities';
+.phone-number {
+  @include flex-container(row, normal, center);
+  &__icon {
+    margin-right: $spacing-sm;
+  }
+
+  &__text {
+    font-size: $font-size-md;
+    font-weight: bold;
+  }
+}
