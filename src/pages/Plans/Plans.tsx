@@ -1,13 +1,11 @@
 'use client';
 import { PlansLayaut } from '@components/Templates';
+import { useAuth } from '@hooks/useAuth';
+import useBack from './Hooks/useBack';
 import useInsuranceTypes from './Hooks/useInsuranceTypes ';
 import styles from './Plans.module.scss';
 import { StepOne } from './Steps/StepOne';
-import useBack from './Hooks/useBack';
-import { useAuth } from '@hooks/useAuth';
 import { StepTwo } from './Steps/StepTwo';
-import { useEffect } from 'react';
-import { quoteOptionsData } from '@data/circleItems';
 
 export type PlansProps = {
   // types...

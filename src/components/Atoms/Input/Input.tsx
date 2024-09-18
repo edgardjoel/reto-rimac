@@ -1,8 +1,7 @@
 'use client';
-import classNames from 'classnames';
-import styles from './Input.module.scss';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
+import styles from './Input.module.scss';
 export type InputProps = {
   type?: 'text' | 'email' | 'password' | 'number'; // Añadimos diferentes tipos de input
   placeholder?: string; // Placeholder personalizado

@@ -1,10 +1,7 @@
-import { plansApiUrl, userApiUrl } from '@config/apiConfig';
+import { userApiUrl } from '@config/apiConfig';
 import { useAuth } from '@hooks/useAuth';
-import { UserInfo } from '@interfaces/localStorage';
-import { IUser } from '@interfaces/User';
 import { getUsers } from '@services/userService';
 import { usersTemplate } from '@utilities/userTemplate';
-import { setUserInfo } from '@utilities/utils';
 import { useState } from 'react';
 
 const useUsers = () => {

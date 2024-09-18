@@ -2,7 +2,6 @@
 
 import classNames from 'classnames';
 import styles from './QuoteOption.module.scss';
-import { PlanType } from '@dto/index';
 
 export type QuoteOptionProps = {
   unselectedIcon?: React.ReactNode;
@@ -29,7 +28,6 @@ const QuoteOption: React.FC<QuoteOptionProps> = ({
   onSelect,
   active = false,
   className,
-  id = 0,
 }) => {
   return (
     <div

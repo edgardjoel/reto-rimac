@@ -1,15 +1,15 @@
 'use client';
 
-import { ErrorMessage, Form, Formik, FormikValues, useFormik } from 'formik';
+import { Form, Formik } from 'formik';
 
 import { CheckboxWithText } from '@components/Molecules';
 import { DropdownInputGroup } from '../DropdownInputGroup';
 import styles from './InsuranceQuoteForm.module.scss';
 
 import { Button, Input } from '@components/Atoms';
-import { sanitizeNumericInput } from '@utilities/utils';
-import React, { useState } from 'react';
 import { documentOptions, formSchema } from '@dto/index';
+import { sanitizeNumericInput } from '@utilities/utils';
+import React from 'react';
 
 import { toFormikValidationSchema } from 'zod-formik-adapter';
 

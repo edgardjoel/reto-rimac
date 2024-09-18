@@ -1,11 +1,10 @@
 'use client';
-import { QuoteOption, PlanCard } from '@components/Molecules';
-import { SliderContainer } from '@components/Organisms/SliderContainer';
-import { quoteOptionsData } from '@data/circleItems';
-import styles from './StepOne.module.scss';
-import { QuoteOptionProps } from '@components/Molecules/QuoteOption/QuoteOption';
+import { PlanCard, QuoteOption } from '@components/Molecules';
 import { PlanCardProps } from '@components/Molecules/PlanCard/PlanCard';
+import { QuoteOptionProps } from '@components/Molecules/QuoteOption/QuoteOption';
+import { SliderContainer } from '@components/Organisms/SliderContainer';
 import useBack from '@pages/Plans/Hooks/useBack';
+import styles from './StepOne.module.scss';
 
 export type StepOneProps = {
   handleSelect: (title: QuoteOptionProps) => void;
