@@ -1,3 +1,4 @@
+import { PlanCardProps } from '@components/Molecules/PlanCard/PlanCard';
 import { useAuth } from '@hooks/useAuth';
 
 const useBack = () => {
@@ -12,13 +13,13 @@ const useBack = () => {
       setUserInfo({ ...userInfo, progress: { ...userInfo.progress, currentStep: 0 } });
     }
   };
-  const Next = (data: any) => {
+  const Next = (data: PlanCardProps) => {
     if (userInfo?.progress.currentStep == 0) {
       setUserInfo({
         ...userInfo,
         progress: { ...userInfo.progress, currentStep: 1 },
         namePlan: data.title,
-        price: data.price,
+        price: data.discount ? data.discount : data.price,
       });
     }
   };

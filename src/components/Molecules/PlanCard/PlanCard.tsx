@@ -11,6 +11,8 @@ export type PlanCardProps = {
   title: string;
   subtitle: string;
   cost: string;
+  discount?: number;
+  price?: number;
   icon?: React.ReactNode; // ícono que puede ser pasado como un componente
   iconPosition?: 'left' | 'right'; // Posición del ícono
   features: { description: string; iconBineta?: React.ReactNode }[]; // Lista de características del plan

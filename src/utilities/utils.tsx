@@ -63,6 +63,7 @@ export const transformAndLabelPlans = (
     .filter((e) => e.age > happyBardey)
     .map(({ name, price, description, discount = '' }) => ({
       price: price,
+      discount: Number(discount),
       title: name,
       subtitle: 'Costo del plan',
       originalCostStr: discount ? `$${price} antes` : '',

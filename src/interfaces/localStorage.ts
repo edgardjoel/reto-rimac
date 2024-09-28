@@ -6,10 +6,11 @@ interface Progress {
   currentStep: number;
 }
 
-export interface UserInfo extends IUser, Pick<IPlans, 'price'> {
+export interface UserInfo extends IUser {
   dni: string;
   phoneNumber: string;
   progress: Progress;
   namePlan: string;
   typeDocument: string;
+  price?: number;
 }
